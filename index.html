@@ -401,7 +401,8 @@
 			.tab-link-tab-3,
 			.tab-link-tab-4,
 			.tab-link-tab-5,
-			.tab-link-tab-6-2 {
+			.tab-link-tab-6-2,
+			.tab-link-tab-7 {
 				color: #6db2aa8f;
 				background-color: #4c4c4c;
 				border-radius: 11px;
@@ -416,7 +417,8 @@
 			.tab-link-tab-3.w--current,
 			.tab-link-tab-4.w--current,
 			.tab-link-tab-5.w--current,
-			.tab-link-tab-6-2.w--current {
+			.tab-link-tab-6-2.w--current,
+			.tab-link-tab-7.w--current {
 				color: #e0e0e0;
 				background-color: transparent;
 				border: 1px solid #6ab4ab;
@@ -459,6 +461,24 @@
 				height: 100%;
 				padding-top: 4rem;
 				font-weight: 400;
+			}
+
+			.tab-section-title {
+				color: #6ab4ab;
+				font-family: Red Hat Display, sans-serif;
+				font-size: 1.1rem;
+				font-weight: 600;
+				margin-top: 1.25rem;
+				margin-bottom: 0.25rem;
+			}
+
+			.tab-note {
+				opacity: 0.5;
+				color: #e0e0e0;
+				font-family: Red Hat Display, sans-serif;
+				font-size: 0.9rem;
+				font-style: italic;
+				margin-top: 1rem;
 			}
 
 			.tab-bullet {
@@ -671,274 +691,295 @@
 							<div class="u-text-style-large tab-title">Technology Status</div>
 						</a>
 						<a data-w-tab="Tab 2" class="tab-link-tab-2 w-inline-block w-tab-link" href="#tab-2" role="tab" aria-selected="false" tabindex="-1">
-							<div class="u-text-style-large tab-title inactive _2">Current Maturity</div>
-						</a>
-						<a data-w-tab="Tab 3" class="tab-link-tab-3 w-inline-block w-tab-link" href="#tab-3" role="tab" aria-selected="false" tabindex="-1">
 							<div class="u-text-style-large tab-title inactive _2">Validation Framework</div>
 						</a>
-						<a data-w-tab="Tab 4" class="tab-link-tab-4 w-inline-block w-tab-link" href="#tab-4" role="tab" aria-selected="false" tabindex="-1">
+						<a data-w-tab="Tab 3" class="tab-link-tab-3 w-inline-block w-tab-link" href="#tab-3" role="tab" aria-selected="false" tabindex="-1">
 							<div class="u-text-style-large tab-title inactive _2">Evidence Structure</div>
 						</a>
-						<a data-w-tab="Tab 5" class="tab-link-tab-5 w-inline-block w-tab-link" href="#tab-5" role="tab" aria-selected="false" tabindex="-1">
+						<a data-w-tab="Tab 4" class="tab-link-tab-4 w-inline-block w-tab-link" href="#tab-4" role="tab" aria-selected="false" tabindex="-1">
 							<div class="u-text-style-large tab-title inactive _2">Risk Mitigation</div>
 						</a>
-						<a data-w-tab="Tab 6" class="tab-link-tab-6-2 w-inline-block w-tab-link" href="#tab-6" role="tab" aria-selected="false" tabindex="-1">
+						<a data-w-tab="Tab 5" class="tab-link-tab-5 w-inline-block w-tab-link" href="#tab-5" role="tab" aria-selected="false" tabindex="-1">
 							<div class="u-text-style-large tab-title inactive _2">Path to Industrialization</div>
+						</a>
+						<a data-w-tab="Tab 6" class="tab-link-tab-6-2 w-inline-block w-tab-link" href="#tab-6" role="tab" aria-selected="false" tabindex="-1">
+							<div class="u-text-style-large tab-title inactive _2">Engagement Protocol</div>
+						</a>
+						<a data-w-tab="Tab 7" class="tab-link-tab-7 w-inline-block w-tab-link" href="#tab-7" role="tab" aria-selected="false" tabindex="-1">
+							<div class="u-text-style-large tab-title inactive _2">Contact</div>
 						</a>
 					</div>
 
-					<div class="tabs-content tab-pane-tab-1 w-tab-content">
-						<!-- TAB 1 -->
-						<div data-w-tab="Tab 1" class="tab-pane-tab-1 w-tab-pane w--tab-active" id="tab-1" role="tabpanel" style="opacity: 1; transition: all, opacity 300ms">
-							<div class="w-layout-hflex tab-2col-grid">
-								<div class="w-layout-vflex tab left-tab" id="w-node-dfbdf0da-b3eb-8297-bfa5-ac631b5f7c8e-c601fcd1">
-									<div class="tab-bullet"><div class="bullet-text">Summary</div></div>
-									<div class="w-layout-vflex tab-content">
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">AQUINTAQA is a desalination platform based on a volumetric gas–sorbent process.</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">Program progressed from laboratory validation to integrated pilot operation.</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">Core process architecture is established; key operational regimes demonstrated and independently verified.</div>
-										</div>
-									</div>
-								</div>
+					<div class="tabs-content w-tab-content">
+						<!-- TAB 1: Technology Status -->
+						<div data-w-tab="Tab 1" class="w-tab-pane w--tab-active" id="tab-1" role="tabpanel" style="opacity: 1; transition: opacity 300ms">
+							<div class="w-layout-vflex tab left-tab">
+								<div class="tab-bullet"><div class="bullet-text">Technology Status</div></div>
+								<div class="w-layout-vflex tab-content">
+									<div class="bullet-text white-40">AQUINTAQA is a desalination platform based on a volumetric gas-sorbent process. The program has progressed from laboratory validation to integrated pilot operation. Core process architecture is established. Key operational regimes have been demonstrated and independently verified.</div>
 
-								<div class="w-layout-vflex tab right-tab">
-									<div class="w-layout-vflex tab-content right-tab">
-										<div class="w-layout-hflex flex-block-8">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">Pre-NDA overview only — no proprietary know-how disclosed.</div>
-										</div>
-										<div class="w-layout-hflex with-dimension-tab">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">TRL status and validation summaries are presented at a high level.</div>
-										</div>
-										<div class="w-layout-hflex with-dimension-tab">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">Additional materials are available post-NDA via controlled Data Room access.</div>
-										</div>
+									<div class="tab-section-title">Current Maturity</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Active technical validation spans TRL-3 to TRL-6 (integrated pilot demonstrated).</div>
 									</div>
-
-									<a href="#" class="analytics-button _2 w-button">Request Data Room Access ➜</a>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Integrated pilot demonstrated (&ge;800h continuous runs)</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Multi-feed capability validated</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Baseline operating conditions defined</div>
+									</div>
 								</div>
 							</div>
 						</div>
 
-						<!-- TAB 2 -->
+						<!-- TAB 2: Validation Framework -->
 						<div data-w-tab="Tab 2" class="w-tab-pane" id="tab-2" role="tabpanel">
-							<div class="w-layout-hflex tab-2col-grid">
-								<div class="w-layout-vflex tab left-tab _2" id="w-node-_762702a7-2b81-d21a-a10a-a00cfd3373bc-c601fcd1">
-									<div class="tab-bullet"><div class="bullet-text">Current Maturity</div></div>
-									<div class="w-layout-vflex tab-content">
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">Active technical validation spans TRL-3 to TRL-6 (integrated pilot demonstrated).</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">Integrated pilot demonstrated (≥800h continuous runs).</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">Multi-feed capability validated; baseline operating conditions defined.</div>
-										</div>
-									</div>
-								</div>
+							<div class="w-layout-vflex tab left-tab">
+								<div class="tab-bullet"><div class="bullet-text">Validation Framework</div></div>
+								<div class="w-layout-vflex tab-content">
+									<div class="bullet-text white-40">Validation is structured across three layers:</div>
 
-								<div class="w-layout-vflex tab right-tab">
-									<div class="w-layout-vflex tab-content right-tab">
-										<div class="w-layout-hflex flex-block-8">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">Maturity reflects demonstrated regimes and repeatable pilot operation.</div>
-										</div>
-										<div class="w-layout-hflex with-dimension-tab">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">Extended datasets and engineering excerpts are available post-NDA.</div>
-										</div>
+									<div class="tab-section-title">Laboratory Verification</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Controlled laboratory sampling</div>
 									</div>
-									<a href="#" class="analytics-button _2 w-button">Request Data Room Access ➜</a>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Before/after analytical comparison</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Independent lab confirmation (e-NDA)</div>
+									</div>
+
+									<div class="tab-section-title">Process Stability</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Repeatable directional effect</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Regime reproducibility</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Continuous operation runs</div>
+									</div>
+
+									<div class="tab-section-title">System Integration</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Utilities and control architecture defined</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Monitoring protocols implemented</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Host-site compatibility assessed</div>
+									</div>
+
+									<div class="tab-note">No proprietary know-how is disclosed in this section.</div>
 								</div>
 							</div>
 						</div>
 
-						<!-- TAB 3 -->
+						<!-- TAB 3: Evidence Structure -->
 						<div data-w-tab="Tab 3" class="w-tab-pane" id="tab-3" role="tabpanel">
-							<div class="w-layout-hflex tab-2col-grid">
-								<div class="w-layout-vflex tab left-tab" id="w-node-_23162e5e-dff0-a581-1530-2e10cc2e6c3c-c601fcd1">
-									<div class="tab-bullet"><div class="bullet-text">Validation Framework</div></div>
-									<div class="w-layout-vflex tab-content">
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40"><strong>Laboratory Verification:</strong> Controlled laboratory sampling; before/after analytical comparison; independent lab confirmation (e-NDA).</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40"><strong>Process Stability:</strong> Repeatable directional effect; regime reproducibility; continuous operation runs.</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40"><strong>System Integration:</strong> Utilities and control architecture defined; monitoring protocols implemented; host-site compatibility assessed.</div>
-										</div>
+							<div class="w-layout-vflex tab left-tab">
+								<div class="tab-bullet"><div class="bullet-text">Evidence Structure</div></div>
+								<div class="w-layout-vflex tab-content">
+									<div class="tab-section-title">Public (Pre-NDA) Materials</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">High-level process architecture</div>
 									</div>
-								</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">TRL status indicators</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Validation summaries</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Operational regime confirmation (non-sensitive)</div>
+									</div>
 
-								<div class="w-layout-vflex tab right-tab">
-									<div class="w-layout-vflex tab-content right-tab">
-										<div class="w-layout-hflex flex-block-8">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">Validation is structured across lab verification, stability, and integration layers.</div>
-										</div>
-										<div class="w-layout-hflex with-dimension-tab">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">Independent confirmation is available post-NDA.</div>
-										</div>
+									<div class="tab-section-title">Extended Materials (Post-NDA / Data Room)</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Independent laboratory reports</div>
 									</div>
-									<a href="#" class="analytics-button _2 w-button">Request Data Room Access ➜</a>
-								</div>
-							</div>
-						</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Sampling protocols</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Analytical methodologies</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Expanded pilot datasets</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Engineering documentation excerpts</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Scale-up modelling framework</div>
+									</div>
 
-						<!-- TAB 4 -->
-						<div data-w-tab="Tab 4" class="tab-pane-tab-4 w-tab-pane" id="tab-4" role="tabpanel">
-							<div class="w-layout-hflex tab-2col-grid">
-								<div class="w-layout-vflex tab left-tab" id="w-node-_23162e5e-dff0-a581-1530-2e10cc2e6c65-c601fcd1">
-									<div class="tab-bullet"><div class="bullet-text">Public (Pre-NDA) Materials</div></div>
-									<div class="w-layout-vflex tab-content">
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">High-level process architecture.</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">TRL status indicators; validation summaries.</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">Operational regime confirmation (non-sensitive).</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="w-layout-vflex tab right-tab _2">
-									<div class="w-layout-vflex tab-content right-tab">
-										<div class="w-layout-hflex flex-block-8">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">Independent laboratory reports; sampling protocols; analytical methodologies.</div>
-										</div>
-										<div class="w-layout-hflex with-dimension-tab">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">Expanded pilot datasets; engineering documentation excerpts; scale-up modelling framework.</div>
-										</div>
-										<div class="w-layout-hflex with-dimension-tab">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">Access is controlled and subject to NDA.</div>
-										</div>
-									</div>
-									<a href="#" class="analytics-button _2 w-button">Request Data Room Access ➜</a>
+									<div class="tab-note">Access is controlled and subject to NDA.</div>
 								</div>
 							</div>
 						</div>
 
-						<!-- TAB 5 -->
+						<!-- TAB 4: Risk Mitigation -->
+						<div data-w-tab="Tab 4" class="w-tab-pane" id="tab-4" role="tabpanel">
+							<div class="w-layout-vflex tab left-tab">
+								<div class="tab-bullet"><div class="bullet-text">Risk Mitigation Structure</div></div>
+								<div class="w-layout-vflex tab-content">
+									<div class="bullet-text white-40">The development program addresses risk across four domains:</div>
+
+									<div class="tab-section-title">Technical Risk</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Core mechanism reproducibility</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Sorbent-process stability envelope</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Multi-feed adaptability</div>
+									</div>
+
+									<div class="tab-section-title">Operational Risk</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Continuous runtime validation</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Downtime reduction strategy</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Monitoring &amp; control redundancy</div>
+									</div>
+
+									<div class="tab-section-title">Environmental Risk</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">No continuous marine brine discharge</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Controlled concentrate stream</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">No RO membrane fouling dependency</div>
+									</div>
+
+									<div class="tab-section-title">Scale-Up Risk</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Engineering design transition prepared</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Industrial layout modelling initiated</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">Host-site integration logic defined</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- TAB 5: Path to Industrialization -->
 						<div data-w-tab="Tab 5" class="w-tab-pane" id="tab-5" role="tabpanel">
-							<div class="w-layout-hflex tab-2col-grid">
-								<div class="w-layout-vflex tab left-tab" id="w-node-_23162e5e-dff0-a581-1530-2e10cc2e6c86-c601fcd1">
-									<div class="tab-bullet"><div class="bullet-text">Risk Mitigation Structure</div></div>
-									<div class="w-layout-vflex tab-content">
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40"><strong>Technical Risk:</strong> Core mechanism reproducibility; sorbent-process stability envelope; multi-feed adaptability.</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40"><strong>Operational Risk:</strong> Continuous runtime validation; downtime reduction strategy; monitoring &amp; control redundancy.</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40"><strong>Environmental Risk:</strong> No continuous marine brine discharge; controlled concentrate stream; no RO membrane fouling dependency.</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40"><strong>Scale-Up Risk:</strong> Engineering design transition prepared; industrial layout modelling initiated; host-site integration logic defined.</div>
-										</div>
+							<div class="w-layout-vflex tab left-tab">
+								<div class="tab-bullet"><div class="bullet-text">Path to Industrialization</div></div>
+								<div class="w-layout-vflex tab-content">
+									<div class="tab-section-title">Progression logic:</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">1. Core principle validation</div>
 									</div>
-								</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">2. Integrated pilot demonstration</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">3. Engineering design optimization</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">4. Demonstration unit deployment</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">5. Industrial roll-out preparation</div>
+									</div>
 
-								<div class="w-layout-vflex tab right-tab">
-									<div class="w-layout-vflex tab-content right-tab">
-										<div class="w-layout-hflex flex-block-8">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">Risk is addressed across technical, operational, environmental, and scale-up domains.</div>
-										</div>
-										<div class="w-layout-hflex with-dimension-tab">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">Timelines and capital structuring are discussed individually under confidentiality.</div>
-										</div>
-									</div>
-									<a href="#" class="analytics-button _2 w-button">Request Data Room Access ➜</a>
+									<div class="tab-note">Timelines and capital structuring are discussed individually under confidentiality.</div>
 								</div>
 							</div>
 						</div>
 
-						<!-- TAB 6 -->
+						<!-- TAB 6: Engagement Protocol -->
 						<div data-w-tab="Tab 6" class="w-tab-pane" id="tab-6" role="tabpanel">
-							<div class="w-layout-hflex tab-2col-grid">
-								<div class="w-layout-vflex tab left-tab" id="w-node-_676d98e7-d83e-d8a3-2518-066d0b7d184f-c601fcd1">
-									<div class="tab-bullet"><div class="bullet-text">Progression logic</div></div>
-									<div class="w-layout-vflex tab-content">
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">1. Core principle validation</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">2. Integrated pilot demonstration</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">3. Engineering design optimization</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">4. Demonstration unit deployment</div>
-										</div>
-										<div class="w-layout-hflex tab-row">
-											<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
-											<div class="bullet-text white-40">5. Industrial roll-out preparation</div>
-										</div>
+							<div class="w-layout-vflex tab left-tab">
+								<div class="tab-bullet"><div class="bullet-text">Engagement Protocol</div></div>
+								<div class="w-layout-vflex tab-content">
+									<div class="bullet-text white-40">Institutional engagement is structured as follows:</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">1. Initial technical discussion</div>
 									</div>
-								</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">2. NDA execution</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">3. Data Room access</div>
+									</div>
+									<div class="w-layout-hflex tab-row">
+										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67ec35365a60b480dd0099ff_X.svg" class="marker _2" />
+										<div class="bullet-text white-40">4. Technical review session</div>
+									</div>
 
-								<div class="w-layout-vflex tab right-tab">
-									<div class="w-layout-vflex tab-content right-tab">
-										<div class="w-layout-hflex flex-block-8">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">1. Initial technical discussion</div>
-										</div>
-										<div class="w-layout-hflex with-dimension-tab">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">2. NDA execution</div>
-										</div>
-										<div class="w-layout-hflex with-dimension-tab">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">3. Data Room access</div>
-										</div>
-										<div class="w-layout-hflex with-dimension-tab">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">4. Technical review session</div>
-										</div>
-										<div class="w-layout-hflex with-dimension-tab">
-											<img alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" loading="lazy" class="bullet _2" />
-											<div class="u-text-style-h6 tab-testimonial _2">No public capital offering is presented on this page.</div>
-										</div>
-									</div>
-									<a href="#" class="analytics-button _2 w-button">Request Data Room Access ➜</a>
+									<div class="tab-note">No public capital offering is presented on this page.</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- TAB 7: Contact -->
+						<div data-w-tab="Tab 7" class="w-tab-pane" id="tab-7" role="tabpanel">
+							<div class="w-layout-vflex tab left-tab">
+								<div class="tab-bullet"><div class="bullet-text">Contact</div></div>
+								<div class="w-layout-vflex tab-content">
+									<div class="bullet-text white-40">For institutional inquiries and access requests:</div>
+									<a href="#" class="analytics-button _2 w-button" style="margin-top: 1rem">Request Data Room Access ➜</a>
 								</div>
 							</div>
 						</div>
