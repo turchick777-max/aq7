@@ -4,6 +4,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Investor Overview — Pre-NDA</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 		<style>
 			/* ====== YOUR PROVIDED CSS (unchanged) ====== */
 			.inherited-css {
@@ -15,7 +18,7 @@
 				line-height: 30px;
 			}
 			body {
-				background: #191919;
+				background: #0D1117;
 			}
 			nav {
 				display: block;
@@ -272,7 +275,7 @@
 			h4 {
 				margin-top: 0;
 				margin-bottom: 0.5rem;
-				font-family: Red Hat Display, sans-serif;
+				font-family: Inter, sans-serif;
 				font-size: 20px;
 				line-height: 1.25em;
 				letter-spacing: 0.01em;
@@ -297,29 +300,35 @@
 
 			.u-text-style-h1 {
 				margin-bottom: 0.75rem;
-				font-family: Red Hat Display, sans-serif;
-				font-size: clamp(2.25rem, 2.036rem + 1.07vw, 3rem);
-				line-height: 1em;
+				font-family: Inter, sans-serif;
+				font-size: 44px;
+				line-height: 1.1em;
 				letter-spacing: -0.03em;
-				font-weight: 500;
+				font-weight: 600;
 				text-transform: none;
 				text-wrap: balance;
 			}
 
 			.u-text-style-h1.blue {
-				color: #9fd0e7;
+				color: #E6EDF3;
 			}
 
 			.u-text-style-h1.blue._2 {
 				z-index: 2;
-				color: #6ab4ab;
+				color: #E6EDF3;
 				width: 37%;
 				position: relative;
 			}
 
+			.u-text-style-h1.blue._2 .subtitle {
+				opacity: 0.85;
+				font-size: 22px;
+				font-weight: 500;
+			}
+
 			.u-text-style-h6 {
 				margin-bottom: 0.5rem;
-				font-family: Red Hat Display, sans-serif;
+				font-family: Inter, sans-serif;
 				font-size: 1rem;
 				line-height: 1.25rem;
 				font-weight: 500;
@@ -327,13 +336,13 @@
 			}
 
 			.u-text-style-h6.tab-testimonial {
-				color: #c09fbc;
-				font-family: Red Hat Display, sans-serif;
+				color: #9AA6B2;
+				font-family: Inter, sans-serif;
 				font-weight: 400;
 			}
 
 			.u-text-style-h6.tab-testimonial._2 {
-				color: #6ab4ab;
+				color: #2BD4C3;
 			}
 
 			.u-text-style-large {
@@ -349,8 +358,10 @@
 
 			.u-text-style-large.tab-title {
 				margin-bottom: 0;
-				font-family: Red Hat Display, sans-serif;
-				font-size: 1.125rem;
+				font-family: Inter, sans-serif;
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 1;
 			}
 
 			._2col-grid {
@@ -374,7 +385,7 @@
 			}
 
 			._2col-grid.analytics-header._2 {
-				border-bottom: 1px solid #c5b89166;
+				border-bottom: 1px solid rgba(230, 237, 243, 0.10);
 				width: 100%;
 				margin-bottom: 4rem;
 				margin-top: 0;
@@ -404,13 +415,17 @@
 			.tab-link-tab-5,
 			.tab-link-tab-6-2,
 			.tab-link-tab-7 {
-				color: #6db2aa8f;
-				background-color: #2f2f2f;
-				border-radius: 11px;
+				color: #9AA6B2;
+				background-color: transparent;
+				border: none;
+				border-bottom: 2px solid transparent;
+				border-radius: 0;
 				justify-content: center;
 				align-items: center;
-				padding: 12px 20px;
+				height: 42px;
+				padding: 0 20px;
 				display: flex;
+				transition: color 0.3s, border-color 0.3s;
 			}
 
 			.tab-link-tab-1.w--current,
@@ -420,9 +435,10 @@
 			.tab-link-tab-5.w--current,
 			.tab-link-tab-6-2.w--current,
 			.tab-link-tab-7.w--current {
-				color: #e0e0e0;
+				color: #E6EDF3;
 				background-color: transparent;
-				border: 1px solid #6ab4ab;
+				border: none;
+				border-bottom: 2px solid #2BD4C3;
 			}
 
 			.tab-2col-grid {
@@ -438,14 +454,14 @@
 			.tab {
 				grid-column-gap: 3rem;
 				grid-row-gap: 3rem;
-				border-radius: 11px;
-				padding: 2rem;
+				border-radius: 2px;
+				padding: 2.5rem 3rem;
 			}
 
 			.tab.left-tab {
 				padding-top: clamp(2.5rem, 2.072rem + 2.14vw, 4rem);
-				background-color: #2f2f2f;
-				border-radius: 11px;
+				background-color: #141A21;
+				border-radius: 2px;
 				justify-content: flex-start;
 				align-items: flex-start;
 				min-height: 460px;
@@ -455,8 +471,8 @@
 
 			.tab.right-tab {
 				padding-top: clamp(2.5rem, 2.072rem + 2.14vw, 4rem);
-				background-color: #2f2f2f;
-				border: 1px dashed #6ab4ab33;
+				background-color: #141A21;
+				border: 1px dashed rgba(230, 237, 243, 0.10);
 				justify-content: flex-start;
 				align-items: flex-start;
 				height: 100%;
@@ -465,26 +481,28 @@
 			}
 
 			.tab-section-title {
-				color: #6ab4ab;
-				font-family: Red Hat Display, sans-serif;
-				font-size: 1.1rem;
+				color: #E6EDF3;
+				font-family: Inter, sans-serif;
+				font-size: 18px;
 				font-weight: 600;
 				margin-top: 1.25rem;
 				margin-bottom: 0.25rem;
+				border-left: 2px solid #2BD4C3;
+				padding-left: 0.75rem;
 			}
 
 			.tab-note {
-				opacity: 0.5;
-				color: #e0e0e0;
-				font-family: Red Hat Display, sans-serif;
+				opacity: 1;
+				color: #9AA6B2;
+				font-family: Inter, sans-serif;
 				font-size: 0.9rem;
 				font-style: italic;
 				margin-top: 1rem;
 			}
 
 			.tab-bullet {
-				border: 0 solid #c09fbc;
-				border-radius: 11px;
+				border: 0 solid rgba(230, 237, 243, 0.10);
+				border-radius: 2px;
 				padding: 0;
 			}
 
@@ -499,22 +517,24 @@
 			}
 
 			.bullet-text {
-				opacity: 0.56;
-				color: #c5b891;
-				font-family: Red Hat Display, sans-serif;
-				font-size: 1.25rem;
+				opacity: 1;
+				color: rgba(230, 237, 243, 0.92);
+				font-family: Inter, sans-serif;
+				font-size: 15px;
+				font-weight: 400;
 			}
 
 			.bullet-text.white-40 {
-				opacity: 0.56;
-				color: #c5b891;
-				font-size: 1rem;
+				opacity: 1;
+				color: rgba(230, 237, 243, 0.92);
+				font-size: 16px;
+				font-weight: 400;
 				width: 100%;
 			}
 
 			.bullet-text.with-dimension._2 {
 				opacity: 1;
-				color: #6ab4ab;
+				color: #2BD4C3;
 			}
 
 			.tab-content {
@@ -561,20 +581,20 @@
 			}
 
 			.analytics-button._2 {
-				color: #6ab4ab;
+				color: #2BD4C3;
 				background-color: #0000;
-				border: 1px solid #6ab4ab33;
-				border-radius: 11px;
+				border: 1px solid rgba(43, 212, 195, 0.2);
+				border-radius: 2px;
 				transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 				padding: 12px 32px;
-				font-family: Red Hat Display, sans-serif;
+				font-family: Inter, sans-serif;
 				font-size: 1rem;
 				font-weight: 400;
 			}
 
 			.analytics-button._2:hover {
-				color: #1b0303;
-				background-color: #6ab4ab;
+				color: #0D1117;
+				background-color: #2BD4C3;
 			}
 
 			.logo-footer.cards-logo {
@@ -582,11 +602,17 @@
 				position: relative;
 			}
 
-			.bullet {
-				width: 16px;
-			}
-			.bullet._2 {
-				filter: invert();
+			.bullet-dot {
+				display: inline-block;
+				width: 5px;
+				height: 5px;
+				min-width: 5px;
+				min-height: 5px;
+				background-color: #9AA6B2;
+				border-radius: 1px;
+				margin-top: 7px;
+				flex-shrink: 0;
+				align-self: flex-start;
 			}
 
 			.marker {
@@ -609,12 +635,12 @@
 			/* small polish so it looks like a standalone dark section */
 			body {
 				margin: 0;
-				background: #191919;
+				background: #0D1117;
 			}
 			.inherited-css {
 				cursor: default;
-				color: #e0e0e0;
-				font-family: Red Hat Display, sans-serif;
+				color: #E6EDF3;
+				font-family: Inter, sans-serif;
 			}
 
 			@media screen and (max-width: 991px) {
@@ -681,7 +707,7 @@
 			<div class="w-layout-hflex _2col-grid analytics-header _2">
 				<h4 words-slide-from-right="" text-split="" class="u-text-style-h1 blue _2" style="opacity: 1">
 					Investor Overview<br />
-					Pre-NDA View
+					<span class="subtitle">Pre-NDA View</span>
 				</h4>
 			</div>
 
@@ -720,19 +746,19 @@
 
 									<div class="tab-section-title">Current Maturity</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Active technical validation spans TRL-3 to TRL-6 (integrated pilot demonstrated).</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Integrated pilot demonstrated (&ge;800h continuous runs)</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Multi-feed capability validated</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Baseline operating conditions defined</div>
 									</div>
 								</div>
@@ -747,43 +773,43 @@
 
 									<div class="tab-section-title">Laboratory Verification</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Controlled laboratory sampling</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Before/after analytical comparison</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Independent lab confirmation (e-NDA)</div>
 									</div>
 
 									<div class="tab-section-title">Process Stability</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Repeatable directional effect</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Regime reproducibility</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Continuous operation runs</div>
 									</div>
 
 									<div class="tab-section-title">System Integration</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Utilities and control architecture defined</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Monitoring protocols implemented</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Host-site compatibility assessed</div>
 									</div>
 
@@ -798,45 +824,45 @@
 								<div class="w-layout-vflex tab-content">
 									<div class="tab-section-title">Public (Pre-NDA) Materials</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">High-level process architecture</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">TRL status indicators</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Validation summaries</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Operational regime confirmation (non-sensitive)</div>
 									</div>
 
 									<div class="tab-section-title">Extended Materials (Post-NDA / Data Room)</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Independent laboratory reports</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Sampling protocols</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Analytical methodologies</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Expanded pilot datasets</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Engineering documentation excerpts</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Scale-up modelling framework</div>
 									</div>
 
@@ -853,57 +879,57 @@
 
 									<div class="tab-section-title">Technical Risk</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Core mechanism reproducibility</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Sorbent-process stability envelope</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Multi-feed adaptability</div>
 									</div>
 
 									<div class="tab-section-title">Operational Risk</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Continuous runtime validation</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Downtime reduction strategy</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Monitoring &amp; control redundancy</div>
 									</div>
 
 									<div class="tab-section-title">Environmental Risk</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">No continuous marine brine discharge</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Controlled concentrate stream</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">No RO membrane fouling dependency</div>
 									</div>
 
 									<div class="tab-section-title">Scale-Up Risk</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Engineering design transition prepared</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Industrial layout modelling initiated</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">Host-site integration logic defined</div>
 									</div>
 								</div>
@@ -916,23 +942,23 @@
 								<div class="w-layout-vflex tab-content">
 									<div class="tab-section-title">Progression logic:</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">1. Core principle validation</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">2. Integrated pilot demonstration</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">3. Engineering design optimization</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">4. Demonstration unit deployment</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">5. Industrial roll-out preparation</div>
 									</div>
 
@@ -947,19 +973,19 @@
 								<div class="w-layout-vflex tab-content">
 									<div class="bullet-text white-40">Institutional engagement is structured as follows:</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">1. Initial technical discussion</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">2. NDA execution</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">3. Data Room access</div>
 									</div>
 									<div class="w-layout-hflex tab-row">
-										<img loading="lazy" alt="" src="https://cdn.prod.website-files.com/672a4de6fe9f53ab9fce9f9b/67471cf44775aea95ee545e5_Bullet-testimonial.svg" class="bullet _2" />
+										<span class="bullet-dot"></span>
 										<div class="bullet-text white-40">4. Technical review session</div>
 									</div>
 
