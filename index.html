@@ -15,7 +15,7 @@
 				line-height: 30px;
 			}
 			body {
-				background: #191919;
+				background: #0D1117;
 			}
 			nav {
 				display: block;
@@ -307,14 +307,18 @@
 			}
 
 			.u-text-style-h1.blue {
-				color: #9fd0e7;
+				color: #E6EDF3;
 			}
 
 			.u-text-style-h1.blue._2 {
 				z-index: 2;
-				color: #6ab4ab;
+				color: #E6EDF3;
 				width: 37%;
 				position: relative;
+			}
+
+			.u-text-style-h1.blue._2 .subtitle {
+				opacity: 0.85;
 			}
 
 			.u-text-style-h6 {
@@ -327,13 +331,13 @@
 			}
 
 			.u-text-style-h6.tab-testimonial {
-				color: #c09fbc;
+				color: #9AA6B2;
 				font-family: Red Hat Display, sans-serif;
 				font-weight: 400;
 			}
 
 			.u-text-style-h6.tab-testimonial._2 {
-				color: #6ab4ab;
+				color: #2BD4C3;
 			}
 
 			.u-text-style-large {
@@ -374,7 +378,7 @@
 			}
 
 			._2col-grid.analytics-header._2 {
-				border-bottom: 1px solid #c5b89166;
+				border-bottom: 1px solid rgba(230, 237, 243, 0.10);
 				width: 100%;
 				margin-bottom: 4rem;
 				margin-top: 0;
@@ -404,13 +408,16 @@
 			.tab-link-tab-5,
 			.tab-link-tab-6-2,
 			.tab-link-tab-7 {
-				color: #6db2aa8f;
-				background-color: #2f2f2f;
-				border-radius: 11px;
+				color: #9AA6B2;
+				background-color: transparent;
+				border: none;
+				border-bottom: 2px solid transparent;
+				border-radius: 0;
 				justify-content: center;
 				align-items: center;
 				padding: 12px 20px;
 				display: flex;
+				transition: color 0.3s, border-color 0.3s;
 			}
 
 			.tab-link-tab-1.w--current,
@@ -420,9 +427,10 @@
 			.tab-link-tab-5.w--current,
 			.tab-link-tab-6-2.w--current,
 			.tab-link-tab-7.w--current {
-				color: #e0e0e0;
+				color: #E6EDF3;
 				background-color: transparent;
-				border: 1px solid #6ab4ab;
+				border: none;
+				border-bottom: 2px solid #2BD4C3;
 			}
 
 			.tab-2col-grid {
@@ -444,7 +452,7 @@
 
 			.tab.left-tab {
 				padding-top: clamp(2.5rem, 2.072rem + 2.14vw, 4rem);
-				background-color: #2f2f2f;
+				background-color: #141A21;
 				border-radius: 11px;
 				justify-content: flex-start;
 				align-items: flex-start;
@@ -455,8 +463,8 @@
 
 			.tab.right-tab {
 				padding-top: clamp(2.5rem, 2.072rem + 2.14vw, 4rem);
-				background-color: #2f2f2f;
-				border: 1px dashed #6ab4ab33;
+				background-color: #141A21;
+				border: 1px dashed rgba(230, 237, 243, 0.10);
 				justify-content: flex-start;
 				align-items: flex-start;
 				height: 100%;
@@ -465,17 +473,19 @@
 			}
 
 			.tab-section-title {
-				color: #6ab4ab;
+				color: #E6EDF3;
 				font-family: Red Hat Display, sans-serif;
 				font-size: 1.1rem;
 				font-weight: 600;
 				margin-top: 1.25rem;
 				margin-bottom: 0.25rem;
+				border-left: 2px solid #2BD4C3;
+				padding-left: 0.75rem;
 			}
 
 			.tab-note {
-				opacity: 0.5;
-				color: #e0e0e0;
+				opacity: 1;
+				color: #9AA6B2;
 				font-family: Red Hat Display, sans-serif;
 				font-size: 0.9rem;
 				font-style: italic;
@@ -483,7 +493,7 @@
 			}
 
 			.tab-bullet {
-				border: 0 solid #c09fbc;
+				border: 0 solid rgba(230, 237, 243, 0.10);
 				border-radius: 11px;
 				padding: 0;
 			}
@@ -499,22 +509,22 @@
 			}
 
 			.bullet-text {
-				opacity: 0.56;
-				color: #c5b891;
+				opacity: 1;
+				color: rgba(230, 237, 243, 0.92);
 				font-family: Red Hat Display, sans-serif;
 				font-size: 1.25rem;
 			}
 
 			.bullet-text.white-40 {
-				opacity: 0.56;
-				color: #c5b891;
+				opacity: 1;
+				color: rgba(230, 237, 243, 0.92);
 				font-size: 1rem;
 				width: 100%;
 			}
 
 			.bullet-text.with-dimension._2 {
 				opacity: 1;
-				color: #6ab4ab;
+				color: #2BD4C3;
 			}
 
 			.tab-content {
@@ -561,9 +571,9 @@
 			}
 
 			.analytics-button._2 {
-				color: #6ab4ab;
+				color: #2BD4C3;
 				background-color: #0000;
-				border: 1px solid #6ab4ab33;
+				border: 1px solid rgba(43, 212, 195, 0.2);
 				border-radius: 11px;
 				transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 				padding: 12px 32px;
@@ -573,8 +583,8 @@
 			}
 
 			.analytics-button._2:hover {
-				color: #1b0303;
-				background-color: #6ab4ab;
+				color: #0D1117;
+				background-color: #2BD4C3;
 			}
 
 			.logo-footer.cards-logo {
@@ -609,11 +619,11 @@
 			/* small polish so it looks like a standalone dark section */
 			body {
 				margin: 0;
-				background: #191919;
+				background: #0D1117;
 			}
 			.inherited-css {
 				cursor: default;
-				color: #e0e0e0;
+				color: #E6EDF3;
 				font-family: Red Hat Display, sans-serif;
 			}
 
@@ -681,7 +691,7 @@
 			<div class="w-layout-hflex _2col-grid analytics-header _2">
 				<h4 words-slide-from-right="" text-split="" class="u-text-style-h1 blue _2" style="opacity: 1">
 					Investor Overview<br />
-					Pre-NDA View
+					<span class="subtitle">Pre-NDA View</span>
 				</h4>
 			</div>
 
